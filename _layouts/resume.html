@@ -48,6 +48,7 @@
           <p class="resume-item-summary">{{ project.summary }}</p>
           <ul>
             <h6>Main Responsibilities: </h6>
+
             {% for task in project.tasks %}
               <li><strong>{{ task.title }}: </strong>{{ task.description }}</li>
             {% endfor %}
@@ -65,8 +66,12 @@
             <div class="highlight"></div>
             <h2>Skills & Competencies</h2>
           </header>
-
-        </section>
+          <div class="resume-item">
+            {% for skill in site.data.skills %}
+            <p class="highlight-item">{{ skill.skill }}</p>
+            {% endfor %}
+          </div>
+        </section><!-- end of resume-item -->
       <!-- end Skills -->
       {% endif %}
 
