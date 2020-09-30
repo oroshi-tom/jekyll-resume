@@ -1,7 +1,7 @@
 # Education
 - degree: "[Degree/Diploma]"
   uni: "[University/College]"
-  year: "[Year (from) &mdash Year (to);]"
+  year: "[Year from &mdash; Year to]"
   awards:
     - award: "[Award or Accomplishment]"
     - award: "[Award or Accomplishment]"
@@ -9,4 +9,4 @@
 # No awards
 - degree: "[Degree/Diploma]"
   uni: "[University/College]"
-  year: "[Year (from) &mdash Year (to);]"
+  year: "[Year from &mdash; Year to]"

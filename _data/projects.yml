@@ -1,0 +1,30 @@
+# Projects
+# To add a link to the project, uncomment 'url' and add url of project website 
+
+# Example project with link
+- role: "[Project role]"
+  name: "[Project Name]"
+  company: "[Company related to project]"
+  date: "[Date from &mdash; date to]"
+  # Add or remove tasks as needed
+  tasks:
+    - title: "[Task title]"
+      description: "[Task description]"
+    - title: "[Task title]"
+      description: "[Task description]"
+    - title: "[Task title]"
+      description: "[Task description]"
+  url: "#"
+
+# Example project with no link 
+- role: "[Project role]"
+  name: "[Project Name]"
+  company: "[Company related to project]"
+  date: "[Date from &mdash; date to]"
+  tasks:
+    - title: "[Task title]"
+      description: "[Task description]"
+    - title: "[Task title]"
+      description: "[Task description]"
+  #url: "#"
+
