@@ -6,15 +6,15 @@
 
       <header class="page-header">
         <div class="title-wrapper">
-          <h1 class="resume-name" itemprop="name">{{ site.resume_name }}</h1>
-          <h6 class="resume-title" itemprop="jobTitle">{{ site.resume_title }}</h6>
-        </div>
+          <h1 class="resume-name">{{ site.resume_name }}</h1>
+          <h6 class="resume-title">{{ site.resume_title }}</h6>
+        </div><!-- end of title-wrapper -->
         <div class="contact-wrapper">
           <div class="contact-box" id="email">              
             <i class="far fa-envelope"></i>
             <a class="contact-link" href="mailto:{{ site.resume_contact_email }}">{{ site.resume_contact_email }}</a>
           </div>
-        </div>
+        </div><!-- end of contact-wrapper -->
       </header>
 
       {% if site.resume_section_about %}
@@ -22,12 +22,11 @@
       <section class="content-section">
         <header class="section-header">
           <div class="highlight"></div>
-          <h2>About</h2>
+          <h2>About Me</h2>
         </header>
         <div class="resume-item">
-          <h4 class="item-title"><!--@TODO: add info--></h4>
-        </div>
-
+          <p>{{ site.data.about.summary }}</p>
+        </div><!-- end of resume-item -->
       </section>
       <!-- end About -->
       {% endif %}
@@ -85,7 +84,7 @@
 
         {% for job in site.data.work %}
         <div class="resume-item">
-          <h4 class="resume-item-title" itemprop="name">{{ job.position }}</h4>
+          <h4 class="resume-item-title">{{ job.position }}</h4>
           <h5 class="resume-item-details">{{ job.company }} &bull; {{ job.duration }}</h5>
           <p class="resume-item-summary">{{ job.summary }}</p>
           <ul>
