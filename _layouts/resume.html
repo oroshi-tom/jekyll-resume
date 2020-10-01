@@ -4,12 +4,12 @@
   <body>
     <div class="wrapper">
 
-      <header class="page-header">
-        <div class="header-title-wrapper">
+      <header class="header-container">
+        <div class="header-title">
           <h1 class="resume-name">{{ site.resume_name }}</h1>
           <h6 class="resume-title">{{ site.resume_title }}</h6>
         </div><!-- end of title-wrapper -->
-        <div class="header-links-wrapper">
+        <div class="header-links-container">
           {% include header-links.html %}
         </div><!-- end of contact-wrapper -->
       </header>
@@ -62,7 +62,7 @@
             <div class="highlight"></div>
             <h2>Skills & Competencies</h2>
           </header>
-          <div class="resume-item">
+          <div class="resume-item skill-container">
             {% for skill in site.data.skills %}
             <p class="skill-item">{{ skill.skill }}</p>
             {% endfor %}
