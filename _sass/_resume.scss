@@ -4,3 +4,9 @@
 .content-section {
   border: 1px solid red;
 }
+
+.section-header {
+  display: grid;
+  grid-template-columns: 25px 1fr;
+}
+

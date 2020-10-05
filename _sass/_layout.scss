@@ -1,5 +1,26 @@
 // Layout
 
-.wrapper {
-  
+.container {
+  width: $container-width;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: 
+  'header-wrapper'
+  'body-wrapper'
+  ;
 }
+
+.header-wrapper {
+  grid-area: header-wrapper;
+  border: 1px solid red;
+}
+
+.body-wrapper {
+  grid-area: body-wrapper;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
