@@ -1,0 +1,12 @@
+// Third party tools
+
+/*
+pdf printing compatability 
+*/
+.c, .bf, .bi { z-index: -1; }
+
+.pc { z-index: 0; }
+
+div.c { pointer-events: none; }
+
+div.c>* { pointer-events: auto; padding-right: 100px;}
