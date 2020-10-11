@@ -1,12 +1,19 @@
 // Type mixins
-@mixin roboto_regular {
+@mixin roboto {
   font-family: 'Roboto', serif;
+}
+
+@mixin roboto_regular {
+  @include roboto;
   font-weight: 400;
 }
 
 @mixin roboto_regular_uppercase {
-  font-family: 'Roboto', serif;
-  font-weight: 400;
+  @include roboto_regular;
   text-transform: uppercase;
 }
 
+@mixin roboto_bold {
+  @include roboto;
+  font-weight: 700;
+}

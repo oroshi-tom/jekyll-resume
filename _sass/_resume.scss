@@ -1,12 +1,92 @@
 // Resume Styles
+h1, h2, h3, h4, h5, h6, strong {
+  @include roboto;
+}
+
+p, a, li, span, label, input, textarea {
+  @include roboto_regular;
+  font-size: $base-font-size;
+  padding: 1px;
+}
+
 
 // Utility classes
 .content-section {
-  border: 1px solid red;
+  
 }
 
 .section-header {
   display: grid;
   grid-template-columns: 25px 1fr;
+}
+
+
+// Page header styles
+.page-header {
+  grid-area: page-header;
+  background-color: $header-color;
+
+  .header-title {
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+  }
+    
+    .resume-name {
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0;
+    }
+
+    .resume-title {
+      margin: 0;
+      padding: 0;
+    }  
+}
+
+.header-links-container {
+  background: $dark-color;
+  padding: 5px;
+  
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+
+    li {
+      list-style: none;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: $accent-color;
+    }
+
+  }
+}
+
+.header-link-item {
+  display: flex;
+  align-items: center;
+}
+
+.header-link-icon {
+  fill: $header-color;
+  padding: 2px;
+  position: relative;
+  top: 3px;
+  //bottom: 0px;
+}
+
+
+
+// Page body styles
+.page-body {
+  grid-area: page-body;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
