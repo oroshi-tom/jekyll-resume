@@ -3,17 +3,27 @@
 /*
 pdf printing compatability 
 */
-.c, .bf, .bi { z-index: -1; }
+.c,
+.bf,
+.bi {
+  z-index: -1;
+}
 
-.pc { z-index: 0; }
+.pc {
+  z-index: 0;
+}
 
-div.c { pointer-events: none; }
+div.c {
+  pointer-events: none;
+}
 
-div.c>* { pointer-events: auto; padding-right: 100px;}
-
+div.c > * {
+  pointer-events: auto;
+  padding-right: 100px;
+}
 
 // Heading Font Sizes
-// h6 starts at $base-font-size 
+// h6 starts at $base-font-size
 // headings grow from h6 to h1 by $heading-scale
 $heading-scale: 4; // amount of px headings grow from h6 to h1
 
