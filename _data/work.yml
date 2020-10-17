@@ -1,7 +1,7 @@
 # Work Experience
 
-# [Work title]
-- company: "[Comany Name]"
+- id: 1
+  company: "[Comany Name 1]"
   position: "[Position or Job Title]"
   duration: "[From &mdash; To]"
   summary: "[Job summary]"
@@ -12,8 +12,8 @@
     - title: "[Task Title]"
       description: "[Task description]"
 
-# [Work title]
-- company: "[Comany Name]"
+- id: 2
+  company: "[Comany Name 2]"
   position: "[Position or Job Title]"
   duration: "[From &mdash; To]"
   summary: "[Job summary]"
@@ -24,8 +24,8 @@
     - title: "[Task Title]"
       description: "[Task description]"
 
-# [Work title]
-- company: "[Comany Name]"
+- id: 3
+  company: "[Comany Name 3]"
   position: "[Position or Job Title]"
   duration: "[From &mdash; To]"
   summary: "[Job summary]"
