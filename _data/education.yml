@@ -1,5 +1,6 @@
 # Education
-- degree: "[Degree/Diploma]"
+- id: 1
+  degree: "[Degree/Diploma 1]"
   uni: "[University/College]"
   year: "[Year from &mdash; Year to]"
   awards:
@@ -7,6 +8,7 @@
     - award: "[Award or Accomplishment]"
 
 # No awards
-- degree: "[Degree/Diploma]"
+- id: 2
+  degree: "[Degree/Diploma 2]"
   uni: "[University/College]"
   year: "[Year from &mdash; Year to]"

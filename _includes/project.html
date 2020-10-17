@@ -1,0 +1,25 @@
+<!-- included project -->
+<div class="resume-item">
+  <h4 class="resume-item-title">{{ project.role }}</h4>
+  <h5 class="resume-item-details">
+    {% if project.url %}
+    <a href="{{ project.url }}" target="_blank"
+      >{{ project.name }}</a
+    >
+    {% else %}{{ project.name }}{% endif %}
+  </h5>
+  <h5 class="resume-item-details">
+    {{ project.company }} &bull; {{ project.date }}
+  </h5>
+  <p class="resume-item-summary">{{ project.summary }}</p>
+  <ul>
+    <h6>Main Responsibilities:</h6>
+
+    {% for task in project.tasks %}
+    <li>
+      <strong>{{ task.title }}: </strong>{{ task.description }}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+<!-- end of project -->

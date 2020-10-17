@@ -8,8 +8,6 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # resume_color:             ""
 # Your name, as it will appear on the resume
 resume_name: "John Doe"
-# The job title you are applying for
-resume_title: "VP of Being John Doe"
 
 # Contact info, displayed in banner
 resume_header_links:

@@ -1,0 +1,17 @@
+<!-- included work -->
+<div class="resume-item">
+  <h4 class="resume-item-title">{{ work.position }}</h4>
+  <h5 class="resume-item-details">
+    {{ work.company }} &bull; {{ work.duration }}
+  </h5>
+  <p class="resume-item-summary">{{ work.summary }}</p>
+  <ul>
+    <h6>Main Responsibilities:</h6>
+    {% for task in work.tasks %}
+    <li>
+      <strong>{{ task.title }}: </strong>{{ task.description }}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+<!-- end of work -->

@@ -1,2 +1,10 @@
 # About
-summary: "[Impact statement / executive summary]"
+# Set which statement to use in the resume page front-matter
+
+- id: 1
+  summary: "[Impact statement 1/ executive summary]"
+- id: 2
+  summary: "[Impact statement 2/ executive summary]"
+- id: 3
+  summary: "[Impact statement 3/ executive summary]"
+# @TODO: add more entries, and update id

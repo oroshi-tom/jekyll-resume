@@ -1,0 +1,9 @@
+{
+  "editor.formatOnSave": true,
+  "[html]": {
+    "editor.defaultFormatter": "sissel.shopify-liquid"
+  },
+  "editor.formatOnType": true,
+  "workbench.settings.editor": "json",
+  "notebook.kernelProviderAssociations": []
+}

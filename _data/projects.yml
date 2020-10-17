@@ -1,10 +1,11 @@
 # Projects
-# To add a link to the project, uncomment 'url' and add url of project website 
+# To add a link to the project, uncomment 'url' and add url of project website
 
 # Example project with link
-- role: "[Project role]"
-  name: "[Project Name]"
-  company: "[Company related to project]"
+- id: 1
+  role: "[Project role 1]"
+  name: "[Project Name 1]"
+  company: "[Company related to project 1]"
   date: "[Date from &mdash; date to]"
   # Add or remove tasks as needed
   tasks:
@@ -16,10 +17,11 @@
       description: "[Task description]"
   url: "#"
 
-# Example project with no link 
-- role: "[Project role]"
-  name: "[Project Name]"
-  company: "[Company related to project]"
+# Example project with no link
+- id: 2
+  role: "[Project role 2]"
+  name: "[Project Name 2]"
+  company: "[Company related to project 2]"
   date: "[Date from &mdash; date to]"
   tasks:
     - title: "[Task title]"
@@ -28,3 +30,16 @@
       description: "[Task description]"
   #url: "#"
 
+  # Example project with no link
+- id: 3
+  role: "[Project role 3]"
+  name: "[Project Name 3]"
+  company: "[Company related to project 3]"
+  date: "[Date from &mdash; date to]"
+  tasks:
+    - title: "[Task title]"
+      description: "[Task description]"
+    - title: "[Task title]"
+      description: "[Task description]"
+  #url: "#"
+# @TODO: Add more project entries, and update id
