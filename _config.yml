@@ -14,7 +14,8 @@ defaults:
 
       ### > Copy the following variables to your resume front matter
       ### > Edit to include the id's of the entries you want to include, or leave blank to include all entries
-      ### ! DO NOT EDIT THESE HERE, or it will change all of your resumes!
+      ### ! DO NOT EDIT THESE HERE (or it will change all of your resumes)
+
       resume_title: "Job Title"
       # Only include one 'About Me' Statement
       about: 1
