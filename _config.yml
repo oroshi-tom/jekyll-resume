@@ -3,11 +3,27 @@ title: "Modern Resume Template"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-# Resume settings
-# @TODO: add color variations integration
-# resume_color:             ""
-# Your name, as it will appear on the resume
-resume_name: "John Doe"
+# Default Resume Settings
+defaults:
+  - scope:
+      path: "resumes"
+    values:
+      layout: "resume"
+      ## > Edit you name here to change accross all resumes
+      resume_name: "Your Name"
+
+      ### > Copy the following variables to your resume front matter
+      ### > Edit to include the id's of the entries you want to include, or leave blank to include all entries
+      ### ! DO NOT EDIT THESE HERE, or it will change all of your resumes!
+      resume_title: "Job Title"
+      # Only include one 'About Me' Statement
+      about: 1
+      # Specify project ID's from _data/projects, separated by comma
+      projects: [1, 2]
+      # Specify work ID's from _data/work
+      work: [1, 2]
+      # Specify education ID's from _data/education
+      education: [1, 2]
 
 # Contact info, displayed in banner
 resume_header_links:
