@@ -1,0 +1,18 @@
+<!-- included education -->
+<div class="section-entry">
+  <!-- Get the 'About' entry referenced in front-matter -->
+  {%- if page.about -%}
+    {% assign about_id = page.about %}
+  {%- endif -%}
+
+  <!-- If about_id is assigned, include that-->
+  {%- if about_id -%}
+    {%- for about in site.data.about -%}
+      {%- if about.id == about_id -%}
+        <p>{{ about.summary }}</p>
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+
+</div>
+<!-- end of education-->
