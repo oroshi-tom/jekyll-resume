@@ -3,18 +3,19 @@ title: "Modern Resume Template"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
+# Global Variables - same on every resume
+resume_name: "Your Name"
+
 # Default Resume Settings
 defaults:
   - scope:
-      path: "resumes"
+      path: "resumes/*"
     values:
       layout: "resume"
-      ## > Edit you name here to change accross all resumes
-      resume_name: "Your Name"
 
       ### > Copy the following variables to your resume front matter
-      ### > Edit to include the id's of the entries you want to include, or leave blank to include all entries
-      ### ! DO NOT EDIT THESE HERE (or it will change all of your resumes)
+      ### > Edit the numbers to include the entries you want to include, or leave blank to include all entries
+      ### ! DO NOT EDIT THESE HERE (unless you are changing the 'default')
 
       resume_title: "Job Title"
       # Only include one 'About Me' Statement

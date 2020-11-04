@@ -1,38 +1,33 @@
 <!-- Contact links, configured in _config.yml -->
 {% if site.resume_header_links %}
-<ul class="header-links">
-  {% if site.resume_header_links.resume_header_email %}
-  <li class="header-link-item">
-    <i class="fas fa-envelope"></i>
-    <a href="mailto:{{ site.resume_header_links.resume_header_email }}"
-      >{{ site.resume_header_links.resume_header_email }}</a
-    >
-  </li>
-  {% endif %} {% if site.resume_header_links.resume_header_phone %}
-  <li class="header-link-item">
-    <i class="fas fa-phone"></i>
-    <a href="tel:{{ site.resume_header_links.resume_header_phone }}"
-      >{{ site.resume_header_links.resume_header_phone }}</a
-    >
-  </li>
-  {% endif %} {% if site.resume_header_links.resume_header_linkedin %}
-  <li class="header-link-item">
-    <i class="fab fa-linkedin"></i>
-    <a
-      href="{{ site.resume_header_links.resume_header_linkedin }}"
-      target="_blank"
-      >{{ site.resume_header_links.resume_header_linkedin }}</a
-    >
-  </li>
-  {% endif %} {% if site.resume_header_links.resume_header_github %}
-  <li class="header-link-item">
-    <i class="fab fa-github"></i>
-    <a
-      href="{{ site.resume_header_links.resume_header_github }}"
-      target="_blank"
-      >{{ site.resume_header_links.resume_header_github }}</a
-    >
-  </li>
-  {% endif %}
-</ul>
+  <ul class="header-links">
+    {% if site.resume_header_links.resume_header_email %}
+      <li class="header-link-item">
+        <!-- <i class="fas fa-envelope"></i> -->
+        <i class="icon-light">{%- include icons/icon-email.html -%}</i>
+        <a href="mailto:{{ site.resume_header_links.resume_header_email }}">{{ site.resume_header_links.resume_header_email }}</a>
+      </li>
+    {% endif %}
+    {% if site.resume_header_links.resume_header_phone %}
+      <li class="header-link-item">
+        <i class="icon-light">{%- include icons/icon-phone.html -%}</i>
+        <!-- <i class="fas fa-phone"></i> -->
+        <a href="tel:{{ site.resume_header_links.resume_header_phone }}">{{ site.resume_header_links.resume_header_phone }}</a>
+      </li>
+    {% endif %}
+    {% if site.resume_header_links.resume_header_linkedin %}
+      <li class="header-link-item">
+        <i class="icon-light">{%- include icons/icon-linkedin.html -%}</i>
+        <!-- <i class="fab fa-linkedin"></i> -->
+        <a href="{{ site.resume_header_links.resume_header_linkedin }}" target="_blank">{{ site.resume_header_links.resume_header_linkedin }}</a>
+      </li>
+    {% endif %}
+    {% if site.resume_header_links.resume_header_github %}
+      <li class="header-link-item">
+        <i class="icon-light">{%- include icons/icon-github.html -%}</i>
+        <!-- <i class="fab fa-github"></i> -->
+        <a href="{{ site.resume_header_links.resume_header_github }}" target="_blank">{{ site.resume_header_links.resume_header_github }}</a>
+      </li>
+    {% endif %}
+  </ul>
 {% endif %}

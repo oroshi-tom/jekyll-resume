@@ -3,43 +3,46 @@
 
 # Example project with link
 - id: 1
-  role: "[Project role 1]"
-  name: "[Project Name 1]"
-  company: "[Company related to project 1]"
-  date: "[Date from &mdash; date to]"
+  role: "Project role 1"
+  name: "Project Name 1"
+  company: "Company related to project 1"
+  date: "Date from &mdash; date to"
   # Add or remove tasks as needed
+  summary: "Project 1 summary"
   tasks:
-    - title: "[Task title]"
-      description: "[Task description]"
-    - title: "[Task title]"
-      description: "[Task description]"
-    - title: "[Task title]"
-      description: "[Task description]"
+    - title: "Task title"
+      description: "Task description"
+    - title: "Task title"
+      description: "Task description"
+    - title: "Task title"
+      description: "Task description"
   url: "#"
 
 # Example project with no link
 - id: 2
-  role: "[Project role 2]"
-  name: "[Project Name 2]"
-  company: "[Company related to project 2]"
-  date: "[Date from &mdash; date to]"
+  role: "Project role 2"
+  name: "Project Name 2"
+  company: "Company related to project 2"
+  date: "Date from &mdash; date to"
+  summary: "Project 2 summary"
   tasks:
-    - title: "[Task title]"
-      description: "[Task description]"
-    - title: "[Task title]"
-      description: "[Task description]"
+    - title: "Task title"
+      description: "Task description"
+    - title: "Task title"
+      description: "Task description"
   #url: "#"
 
   # Example project with no link
 - id: 3
-  role: "[Project role 3]"
-  name: "[Project Name 3]"
-  company: "[Company related to project 3]"
-  date: "[Date from &mdash; date to]"
+  role: "Project role 3"
+  name: "Project Name 3"
+  company: "Company related to project 3"
+  date: "Date from &mdash; date to"
+  summary: "Project 3 summary"
   tasks:
-    - title: "[Task title]"
-      description: "[Task description]"
-    - title: "[Task title]"
-      description: "[Task description]"
+    - title: "Task title"
+      description: "Task description"
+    - title: "Task title"
+      description: "Task description"
   #url: "#"
 # @TODO: Add more project entries, and update id
