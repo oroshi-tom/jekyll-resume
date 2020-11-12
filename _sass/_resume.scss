@@ -118,3 +118,10 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+// Individual entries in a section
+.entry-body {
+  .entry-task-list ul {
+    margin-left: 20px;
+  }
+}
