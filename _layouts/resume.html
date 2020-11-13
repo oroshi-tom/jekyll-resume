@@ -3,6 +3,7 @@
   {%- include head.html -%}
   <body>
     <div class="container">
+      <!-- begin page header -->
       <header class="page-header">
         <div class="header-title">
           <h1 class="resume-name">{{ site.resume_name }}</h1>
@@ -12,43 +13,32 @@
             {%- endif -%}
           </h6>
         </div>
-        <!-- end of header-title -->
         <div class="header-links-container">
           {%- include header-links.html -%}
         </div>
-        <!-- end of contact-wrapper -->
       </header>
+      <!-- end page header -->
 
       <div class="page-body">
-        <!-- begin first column -->
         <div class="column">
+
           {%- if site.resume_section_about -%}
-            <!-- begin About -->
+            <!-- begin About section -->
             <section class="content-section">
-              <header class="section-header">
-                <div class="section-accent">
-                  <div class="accent-block"></div>
-                </div>
-                <h2 class="section-title">About Me</h2>
-              </header>
+              {%- include section-header.html section_title="About Me" -%}
               <div class="section-body">
                 {%- include about.html -%}
               </div><!-- end of section body -->
             </section>
-            <!-- end About section-->
+            <!-- end About section -->
           {%- endif -%}
 
           {%- if site.resume_section_projects -%}
-            <!-- begin Projects -->
+            <!-- begin Projects section -->
             <section class="content-section">
-              <header class="section-header">
-                <div class="section-accent">
-                  <div class="accent-block"></div>
-                </div>
-                <h2 class="section-title">Professional Project Work</h2>
-              </header>
+              {%- include section-header.html section_title="Professional Project Work" -%}
               <div class="section-body">
-                <!-- Get the 'Project' entry referenced in front-matter -->
+                <!-- Get the 'Project' entries from front-matter -->
                 {%- if page.projects -%}
                   {%- assign project_list = page.projects -%}
                 {%- endif -%}
@@ -56,59 +46,42 @@
                 {%- for project in site.data.projects -%}
                   <!-- if assigned -->
                   {%- if project_list -%}
-                    <!-- print only selected  entries-->
+                    <!-- print only selected entries -->
                     {%- for i in project_list -%}
                       {%- if project.id == i -%}
                         {%- include project.html -%}
                       {%- endif -%}
                     {%- endfor -%}
-
                     <!-- else print all entries-->
                   {%- else -%}
                     {%- include project.html -%}
                   {%- endif -%}
                 {%- endfor -%}
-              </div><!-- end of section body -->
+              </div><!-- end section body -->
             </section>
             <!-- end Projects section -->
           {%- endif -%}
         </div>
-        <!-- end of first column -->
-                                                                                                                                                                                                                                        
-                                                                                                                                                      <!-- begin second column -->
+        <!-- end of first column --><!---->
+                                                                
+        <!-- begin second column-->
         <div class="column">
           {%- if site.resume_section_skills -%}
-
-            <!-- begin Skills -->
+            <!-- begin Skills section -->
             <section class="content-section">
-              <header class="content-header">
-                <div class="accent-wrapper">
-                  <div class="accent"></div>
-                </div>
-                <h2>Skills & Competencies</h2>
-              </header>
-              <div class="resume-item skill-container">
-                {%- for skill in site.data.skills -%}
-                  <p class="skill-item">{{ skill.skill }}</p>
-                {%- endfor -%}
-              </div>
+              {%- include section-header.html section_title="Skills & Competencies" -%}
+              {%- include skills.html -%}
             </section>
-            <!-- end Skills -->
-
-
+            <!-- end Skills section -->
           {%- endif -%}
           <!-- end if site.resume_section_skills -->
 
           {%- if site.resume_section_work -%}
-            <!-- begin Work -->
+            <!-- begin Work section -->
             <section class="content-section">
-              <header class="content-header">
-                <div class="accent-wrapper">
-                  <div class="accent"></div>
-                </div>
-                <h2>Work Experience</h2>
-              </header>
-              <!-- Get the 'Project' entry referenced in front-matter -->
+              {%- include section-header.html section_title="Work Experience" -%}
+
+              <!-- Get the 'Project' entries from front-matter -->
               {%- if page.work -%}
                 {%- assign work_list = page.work -%}
               {%- endif -%}
@@ -130,21 +103,16 @@
 
               {%- endfor -%}
             </section>
-            <!-- end Work -->
+            <!-- end Work section -->
           {%- endif -%}
           <!-- end if site.resume_section_work-->
 
           {%- if site.resume_section_education -%}
-            <!-- begin Education -->
-
+            <!-- begin Education section -->
             <section class="content-section">
-              <header class="content-header">
-                <div class="accent-wrapper">
-                  <div class="accent"></div>
-                </div>
-                <h2>Education</h2>
-              </header>
-              <!-- Get the 'Project' entry referenced in front-matter -->
+              {%- include section-header.html section_title="Education" -%}
+
+              <!-- Get the 'Education' entries from front-matter -->
               {%- if page.education -%}
                 {%- assign education_list = page.education -%}
               {%- endif -%}
@@ -165,7 +133,7 @@
                 {%- endif -%}
               {%- endfor -%}
             </section>
-            <!-- end Education -->
+            <!-- end Education section -->
           {%- endif -%}
           <!-- end if site.resume_section_education-->
         </div>

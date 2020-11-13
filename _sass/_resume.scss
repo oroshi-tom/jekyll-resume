@@ -120,8 +120,13 @@ textarea {
 }
 
 // Individual entries in a section
+.entry-header {
+  .entry-role {
+    text-decoration: underline;
+  }
+}
 .entry-body {
-  .entry-task-list ul {
+  ul {
     margin-left: 20px;
   }
 }
