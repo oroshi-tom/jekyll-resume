@@ -10,12 +10,14 @@
     <p class="entry-summary">
       {{ project.summary }}
     </p>
-    <p>
-      {% if project.url %}
-        <a href="{{ project.url }}" target="_blank">{{ project.name }}</a>
-      {% endif %}
-    </p>
-  </div>
+    <!-- Link to project, if provided -->
+    {% if project.url %}
+      <p>
+        <a href="{{ project.url }}" target="_blank">{{ project.title }}</a>
+      </p>
+    {% endif %}
+  </div><!-- End entry-header -->
+
   <div class="entry-body">
     <ul class="entry-task-list">
       {% for task in project.tasks %}
@@ -26,6 +28,6 @@
         </li>
       {% endfor %}
     </ul>
-  </div>
+  </div><!-- end of entry-body -->
 </div>
-<!-- end of project -->
+<!-- end included project -->

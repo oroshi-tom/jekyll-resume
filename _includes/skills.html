@@ -1,0 +1,13 @@
+<!-- included skills -->
+<div class="section-entry skills-container">
+  <div class="entry-body">
+    <ul>
+      {% for skill in site.data.skills %}
+        <li>
+          {{ skill.skill }}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+<!-- end included skills -->

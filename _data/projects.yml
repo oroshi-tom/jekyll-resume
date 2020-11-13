@@ -3,8 +3,8 @@
 
 # Example project with link
 - id: 1
-  role: "Project role 1"
-  name: "Project Name 1"
+  role: "Project Role 1"
+  title: "Project Title 1"
   company: "Company related to project 1"
   date: "Date from &mdash; date to"
   # Add or remove tasks as needed
@@ -20,8 +20,8 @@
 
 # Example project with no link
 - id: 2
-  role: "Project role 2"
-  name: "Project Name 2"
+  role: "Project Role 2"
+  title: "Project Title 2"
   company: "Company related to project 2"
   date: "Date from &mdash; date to"
   summary: "Project 2 summary"
@@ -34,8 +34,8 @@
 
   # Example project with no link
 - id: 3
-  role: "Project role 3"
-  name: "Project Name 3"
+  role: "Project Role 3"
+  title: "Project Title 3"
   company: "Company related to project 3"
   date: "Date from &mdash; date to"
   summary: "Project 3 summary"

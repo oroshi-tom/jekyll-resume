@@ -8,19 +8,20 @@
       {{ work.duration }}
     </h4>
     <p class="resume-item-summary">{{ work.summary }}</p>
-  </div>
-<div class="entry-body">
-  <div class="entry-task-list">
-    <h6>Main Responsibilities:</h6>
-    <ul>      
-      {% for task in work.tasks %}
-        <li>
-          <strong>{{ task.title }}:
-          </strong>
-          {{ task.description }}
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
+  </div><!-- end entry header -->
+  <div class="entry-body">
+    <div class="entry-task-list">
+      <h6>Main Responsibilities:</h6>
+      <ul>
+        {% for task in work.tasks %}
+          <li>
+            <strong>{{ task.title }}:
+            </strong>
+            {{ task.description }}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div><!-- end entry body -->
 </div>
-<!-- end of work -->
+<!-- end included work -->
