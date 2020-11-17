@@ -41,6 +41,8 @@ textarea {
 
 .section-accent {
   grid-area: section-accent;
+  display: flex;
+  align-items: center;
 }
 
 .accent-block {
@@ -118,6 +120,8 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+// Section Styles
 
 // Individual entries in a section
 .entry-header {
