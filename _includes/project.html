@@ -1,13 +1,13 @@
 <!-- included project -->
-<div class="section-entry">
-  <div class="entry-header">
-    <h4 class="entry-role">{{ project.role }}</h4>
-    <h4 class="entry-title">{{ project.title }}</h4>
-    <p class="entry-date">{{ project.company }}
+<div class="c-entry">
+  <div class="c-entry__header">
+    <h4 class="c-entry__title">{{ project.role }}</h4>
+    <h5 class="c-entry__subtitle">{{ project.title }}</h5>
+    <p class="c-entry__date">{{ project.company }}
       &bull;
       {{ project.date }}
     </p>
-    <p class="entry-summary">
+    <p class="c-entry__summary">
       {{ project.summary }}
     </p>
     <!-- Link to project, if provided -->
@@ -16,10 +16,10 @@
         <a href="{{ project.url }}" target="_blank">{{ project.title }}</a>
       </p>
     {% endif %}
-  </div><!-- End entry-header -->
+  </div><!-- ./c-entry__header -->
 
-  <div class="entry-body">
-    <ul class="entry-task-list">
+  <div class="c-entry__body">
+    <ul class="c-entry__list">
       {% for task in project.tasks %}
         <li>
           <strong>{{ task.title }}:
@@ -28,6 +28,6 @@
         </li>
       {% endfor %}
     </ul>
-  </div><!-- end of entry-body -->
+  </div><!-- ./entry-body -->
 </div>
-<!-- end included project -->
+<!-- ./included project -->

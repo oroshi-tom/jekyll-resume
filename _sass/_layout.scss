@@ -1,14 +1,10 @@
 // Layout
-.container {
+.l-container {
   width: $container-width;
   margin: 0 auto;
   display: grid;
   grid-template-rows: auto 1fr;
-  grid-template-areas: 
-  'page-header'
-  'page-body'
-  ;
+  grid-template-areas:
+    "page-header"
+    "page-body";
 }
-
-
-
