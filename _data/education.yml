@@ -1,14 +1,16 @@
 # Education
 - id: 1
-  degree: "[Degree/Diploma 1]"
-  uni: "[University/College]"
-  year: "[Year from &mdash; Year to]"
+  degree: "Degree or Diploma 1"
+  title: "Degree/Diploma 1 Title"
+  uni: "University/College"
+  year: "Year from &mdash; Year to"
   awards:
-    - award: "[Award or Accomplishment]"
-    - award: "[Award or Accomplishment]"
+    - award: "Award or Accomplishment"
+    - award: "Award or Accomplishment"
 
 # No awards
 - id: 2
-  degree: "[Degree/Diploma 2]"
-  uni: "[University/College]"
-  year: "[Year from &mdash; Year to]"
+  degree: "Degree or Diploma 2"
+  title: "Degree/Diploma 2 Title"
+  uni: "University/College"
+  year: "Year from &mdash; Year to"

@@ -1,16 +1,16 @@
 <!-- included work -->
-<div class="section-entry">
-  <div class="entry-header">
-    <h4 class="entry-role">{{ work.position }}</h4>
-    <h5 class="entry-title">
+<div class="c-resume-entry">
+  <div class="c-resume-entry__header">
+    <h4 class="c-resume-entry__name">{{ work.position }}</h4>
+    <p class="c-resume-entry__details">
       {{ work.company }}
       &bull;
       {{ work.duration }}
-    </h5>
-    <p class="entry-summary">{{ work.summary }}</p>
+    </p>
+    <p class="c-resume-entry__summary">{{ work.summary }}</p>
   </div><!-- end entry header -->
-  <div class="entry-body">
-    <div class="entry-task-list">
+  <div class="c-resume-entry__body">
+    <div class="c-resume-entry__task-list">
       <h6>Main Responsibilities:</h6>
       <ul>
         {% for task in work.tasks %}

@@ -1,10 +1,17 @@
 // Layout
-.l-container {
+.l-main-container {
   width: $container-width;
   margin: 0 auto;
   display: grid;
   grid-template-rows: auto 1fr;
   grid-template-areas:
-    "page-header"
-    "page-body";
+    "resume-header"
+    "resume-body";
+}
+
+.l-column-left {
+  grid-area: left-column;
+}
+.l-column-right {
+  grid-area: right-column;
 }

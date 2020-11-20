@@ -22,24 +22,24 @@ textarea {
 }
 
 // Page header styles
-.c-page-header {
-  grid-area: page-header;
+.c-resume-header {
+  grid-area: resume-header;
   background-color: $header-color;
   text-align: center;
   margin: 0;
 
-  .c-page-header__heading-1 {
+  .c-resume-header__title {
     text-transform: uppercase;
     margin: 0;
     padding: 5px;
   }
 
-  .c-page-header__heading-2 {
+  .c-resume-header__name {
     margin: 0;
     padding: 5px;
   }
 
-  .c-page-header__list {
+  .c-resume-header__contact-list {
     background: $dark-color;
     padding: 5px;
     list-style: none;
@@ -48,21 +48,19 @@ textarea {
     flex-wrap: nowrap;
     justify-content: space-evenly;
 
-    .c-page-header__item {
+    .c-resume-header__contact-item {
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
 
-      .c-page-header__icon {
+      .c-resume-header__contact-icon {
+        display: inline-block;
+        fill: $white;
         width: 1.25em !important;
         height: 1.25em !important;
       }
 
-      .c-page-header__icon--light {
-        fill: $white;
-      }
-
-      .c-page-header__link {
+      .c-resume-header__contact-link {
         text-decoration: none;
         color: $accent-color;
         margin-left: 3px;
@@ -72,24 +70,25 @@ textarea {
 }
 
 // Page body styles
-.c-page-body {
-  grid-area: page-body;
+.c-resume-body {
+  grid-area: resume-body;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left-column right-column";
   padding: 5px;
 }
 
 // Section styles
-.c-section {
+.c-resume-section {
   padding-bottom: 5px;
 
-  .c-section__header {
+  .c-resume-section__header {
     padding: 5px 0px;
     display: grid;
     grid-template-columns: 25px 1fr;
     grid-template-areas: "section-accent section-heading";
 
-    .c-section__accent {
+    .c-resume-section__accent {
       grid-area: section-accent;
       justify-self: start;
       align-self: center;
@@ -99,35 +98,40 @@ textarea {
       background-color: #2ceaa3;
     }
 
-    .c-section__heading-1 {
+    .c-resume-section__title {
       grid-area: section-heading;
       margin: auto 5px;
     }
   }
 }
 // Entry Styles
-.c-entry {
-  .c-entry__header {
-    .entry__title {
+.c-resume-entry {
+  padding: 5px 0;
+  .c-resume-entry__header {
+    .c-resume-entry__name {
       text-decoration: underline;
+    }
+
+    .c-resume-entry__details {
+      text-transform: uppercase;
     }
   }
 
-  .c-entry__body {
-    .c-entry__list {
+  .c-resume-entry__body {
+    .c-resume-entry__task-list {
       margin-left: 20px;
     }
   }
 }
 
 // Skills Section
-.skills-container {
+.c-resume-section__float-container {
   display: flex;
   list-style: none;
   flex-flow: row wrap;
   justify-content: space-evenly;
 
-  .skill {
+  .c-resume-section__float-item {
     color: $dark-color;
     background-color: $accent-color;
     border-radius: 5px;

@@ -1,37 +1,37 @@
 # Work Experience
 
 - id: 1
-  company: "[Comany Name 1]"
-  position: "[Position or Job Title]"
-  duration: "[From &mdash; To]"
-  summary: "[Job summary]"
+  company: "Comany Name 1"
+  position: "Position or Job Title"
+  duration: "From &mdash; To"
+  summary: "Job summary"
   tasks:
     # Add task titles and descriptions as required
-    - title: "[Task Title]"
-      description: "[Task description]"
-    - title: "[Task Title]"
-      description: "[Task description]"
+    - title: "Task Title"
+      description: "Task description"
+    - title: "Task Title"
+      description: "Task description"
 
 - id: 2
-  company: "[Comany Name 2]"
-  position: "[Position or Job Title]"
-  duration: "[From &mdash; To]"
-  summary: "[Job summary]"
+  company: "Comany Name 2"
+  position: "Position or Job Title"
+  duration: "From &mdash; To"
+  summary: "Job summary"
   tasks:
     # Add task titles and descriptions as required
-    - title: "[Task Title]"
-      description: "[Task description]"
-    - title: "[Task Title]"
-      description: "[Task description]"
+    - title: "Task Title"
+      description: "Task description"
+    - title: "Task Title"
+      description: "Task description"
 
 - id: 3
-  company: "[Comany Name 3]"
-  position: "[Position or Job Title]"
-  duration: "[From &mdash; To]"
-  summary: "[Job summary]"
+  company: "Comany Name 3"
+  position: "Position or Job Title"
+  duration: "From &mdash; To"
+  summary: "Job summary"
   tasks:
     # Add task titles and descriptions as required
-    - title: "[Task Title]"
-      description: "[Task description]"
-    - title: "[Task Title]"
-      description: "[Task description]"
+    - title: "Task Title"
+      description: "Task description"
+    - title: "Task Title"
+      description: "Task description"
