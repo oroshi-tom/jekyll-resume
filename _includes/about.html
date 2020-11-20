@@ -1,5 +1,5 @@
 <!-- included education -->
-<div class="c-entry">
+<div class="c-resume-entry">
   <!-- Get the 'About' entry referenced in front-matter -->
   {%- if page.about -%}
     {% assign about_id = page.about %}
@@ -9,7 +9,9 @@
   {%- if about_id -%}
     {%- for about in site.data.about -%}
       {%- if about.id == about_id -%}
-        <p>{{ about.summary }}</p>
+        <div class="c-resume-entry__body">
+          <p>{{ about.summary }}</p>
+        </div>
       {%- endif -%}
     {%- endfor -%}
   {%- endif -%}
