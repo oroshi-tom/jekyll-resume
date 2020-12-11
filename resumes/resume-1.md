@@ -5,7 +5,7 @@ layout: resume
 resume_title: "Junior Software Developer"
 
 # About statement to include
-# Choose id# of about statement to include from _data/about.yml
+# Choose 'about' statement id to include from _data/about.yml
 about: 1
 
 # Project entries to inclue
