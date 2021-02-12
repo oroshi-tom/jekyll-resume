@@ -15,9 +15,13 @@ defaults:
     values:
       layout: "resume"
 
-      ### > Copy the following variables to your resume front matter
-      ### > Edit the numbers to include the entries you want to include, or leave blank to include all entries
-      ### ! DO NOT EDIT THESE HERE (unless you are changing the 'default')
+      #(1) > COPY THE FOLLOWING VARIABLES TO YOUR RESUME FRONT-MATTER
+      #(2)> Edit the numbers to include the entries you want, or leave blank to include all entries
+      #(3) ! DO NOT EDIT THESE HERE
+
+      #------------------COPY TO RESUME FRONT-MATTER------------------
+
+      resume: true
 
       resume_title: "Job Title"
       # Only include one 'About Me' Statement
@@ -28,6 +32,8 @@ defaults:
       work: [1, 2]
       # Specify education ID's from _data/education
       education: [1, 2]
+
+      #----------------------------------------------------------------
 
 # Contact info, displayed in banner
 resume_header_links:

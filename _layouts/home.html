@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{%- include head.html -%}
+<body>
+ <h1>{{site.title}}</h1>
+  <nav>
+    <h2>Current Resumes</h2>
+    <ul>
+      {%- for page in site.pages -%}
+        {% if page.resume %}
+          <li>
+            <a href="{{ page.url }}">{{ page.resume_title }}</a>
+          </li>
+        {% endif %} 
+      {%- endfor -%}
+    </ul>
+  </nav>
+</body>
+</html>
