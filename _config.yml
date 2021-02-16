@@ -1,5 +1,6 @@
 # Jekyll Resume Theme Settings
 # ----------------------------
+permalink: /:basename
 # Site Settings
 title: "Modern Resume Template"
 baseurl: "" # the subpath of your site, e.g. /blog

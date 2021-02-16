@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 {%- include head.html -%}
 <body>
- <h1>{{site.title}}</h1>
-  <nav>
-    <h2>Current Resumes</h2>
-    <ul>
-      {%- for page in site.pages -%}
-        {% if page.resume %}
-          <li>
-            <a href="{{ page.url }}">{{ page.resume_title }}</a>
-          </li>
-        {% endif %} 
-      {%- endfor -%}
-    </ul>
-  </nav>
+  <div class="c-resume-body">
+    <div class="l-main-container">
+
+      <header class="c-resume-header">
+        <h1 class="c-resume-header__title">{{ site.title }}</h1>  
+      </header>
+
+      <section class="c-resume-section">
+        {%- include section-header.html section_title="Current Resumes" -%}
+        <div class="c-resume-section__body">      
+          <nav class="c-resume-entry__body">
+            <ul class="c-resume-entry__task-list">
+              {%- for page in site.pages -%}
+                {% if page.resume %}
+                  <li>
+                    <a href="{{ page.url }}">{{ page.resume_title }}</a>
+                  </li>
+                {% endif %} 
+              {%- endfor -%}
+            </ul>
+          </nav>
+        </div><!-- ./c-resume-section__body -->
+      </section><!-- ./c-resume-section -->
+    </div> <!-- ./l-main-container -->
+  </div><!-- ./c-resume-body -->
 </body>
 </html>

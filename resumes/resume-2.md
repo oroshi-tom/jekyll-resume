@@ -3,7 +3,7 @@ resume: true
 layout: resume
 
 # Resume title to be displayed
-resume_title: "Junior Software Developer"
+resume_title: "System Administrator"
 
 # About statement to include
 # Choose 'about' statement id to include from _data/about.yml
