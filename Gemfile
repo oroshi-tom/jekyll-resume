@@ -2,9 +2,9 @@ source "https://rubygems.org"
 
 # Gems
 # ----
-gem "jekyll", "~> 4.2.0"
-gem "bundler", "~> 2.1.4"
-
+gem "jekyll"
+gem "bundler"
+gem "github-pages"
 
 
 # Plugins
