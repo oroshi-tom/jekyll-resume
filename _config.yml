@@ -6,7 +6,7 @@
 
 # Site Settings
 title: "Modern Resume Template"
-baseurl: "/resumes" # the subpath of your site, e.g. /blog
+baseurl: "multi-resume-template" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Global Variables - same on every resume
