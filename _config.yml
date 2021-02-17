@@ -1,13 +1,9 @@
 # Jekyll Resume Theme Settings
 # ----------------------------
-# GitHub Pages Settings
-
-# baseurl: "multi-resume-template"
 
 # Site Settings
 title: "Modern Resume Template"
-baseurl: "multi-resume-template" # the subpath of your site, e.g. /blog
-# url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "jekyll-resume-template"
 
 # Global Variables - same on every resume
 resume_name: "Your Name"
