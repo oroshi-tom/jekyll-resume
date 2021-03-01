@@ -31,18 +31,20 @@ First you'll want to fork the repo to your own account. Then clone it locally an
 
 Since this is a resume *manager*, some setup is needed. The point here is that you can make several resumes with minimal work, so the defaults need to be filled in here. More info on making individual resumes is included below.
 
-The global customizations (name, contact info, etc.) will take place in the /_config.yml file, and will show on all resumes. Here is a list of the global customizations available via /_config.yml:
+The global customizations (name, contact info, etc.) will take place in the `/_config.yml` file, and will show on all resumes. Here is a list of the global customizations available via `/_config.yml`:
 
 -	**Baseurl:** Leave blank to run locally, or fill in with your gh-pages url if serving from there.
-o	`baseurl: “(leave blank, or add gh-pages url)”`
+>`baseurl: ""`
 -	**Resume Name:** Enter your name here, as it will show in the header of each resume.
-o	`resume_name: Your Name`
+>`resume_name: John Doe`
 -	**resume_header_links:** Enter your contact information here, so that the header links will automatically navigate to the correct pages. Un-comment any links to exclude them.
-o	`resume_header_links:
+``` 
+resume_header_links:
   resume_header_email: "somebody@somewhere.org"
   resume_header_phone: "123-456-7891"
   resume_header_linkedin: "https://www.yourlinkedin.com/"
-  resume_header_github: "https://yourgithub.com/"`
+  resume_header_github: "https://yourgithub.com/" 
+```
 -	**Resume Sections:** These are the sections that will appear in *every* resume by default. Comment out any sections that you know you will not want in **any** of your resumes. NOTE: If you do not fill in any entries for a section for a particular resume, then that section will not be included in that resume only. (I recommend leaving all these un-commented.)
 -	**Default Front-Matter:** These key-value pairs control which entries from your dataset will be included in the current resume they reside in, and so they **_MUST_** be copied to every resume document within the `resumes/` directory. Editing the front matter is explained later in this document, in the “Building a Resume” section.
 
