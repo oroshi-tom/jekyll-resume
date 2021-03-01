@@ -1,145 +1,145 @@
 <!DOCTYPE html>
 <html>
-  {%- include head.html -%}
-  <body>
-    <div class="l-main-container">
-      <!-- begin c-resume-header -->
-      <header class="c-resume-header">
-        <h1 class="c-resume-header__title">{{ site.resume_name }}</h1>
-        <h6 class="c-resume-header__name">
-          {%- if page.resume_title -%}
-            {{ page.resume_title }}
-          {%- endif -%}
-        </h6>
-        {%- include header-links.html -%}
-      </header>
-      <!-- ./c-resume-header -->
+    {%- include head.html -%}
+    <body>
+        <div class="l-main-container">
+            <!-- begin c-resume-header -->
+            <header class="c-resume-header">
+                <h1 class="c-resume-header__title">{{ site.resume_name }}</h1>
+                <h6 class="c-resume-header__name">
+                    {%- if page.resume_title -%}
+                        {{ page.resume_title }}
+                    {%- endif -%}
+                </h6>
+                {%- include header-links.html -%}
+            </header>
+            <!-- ./c-resume-header -->
 
 
-      <div class="c-resume-body"><!-- begin c-resume-body -->
-        <div class="l-column-left">
-          {%- if site.resume_section_about -%}
-            <!-- begin About section -->
-            <section class="c-resume-section">
-              {%- include section-header.html section_title="About Me" -%}
-              <div class="c-resume-section__body">
-                {%- include about.html -%}
-              </div><!-- ./section body -->
-            </section>
-            <!-- ./About section -->
-          {%- endif -%}
+            <div class="c-resume-body"><!-- begin c-resume-body -->
+                <div class="l-column-left">
+                    {%- if site.resume_section_about -%}
+                        <!-- begin About section -->
+                        <section class="c-resume-section">
+                            {%- include section-header.html section_title="About Me" -%}
+                            <div class="c-resume-section__body">
+                                {%- include about.html -%}
+                            </div><!-- ./section body -->
+                        </section>
+                        <!-- ./About section -->
+                    {%- endif -%}
 
-          {%- if site.resume_section_projects -%}
-            <!-- begin Projects section -->
-            <section class="c-resume-section">
-              {%- include section-header.html section_title="Professional Project Work" -%}
-              <div class="c-resume-section__body">
-                <!-- Get the 'Project' entries from front-matter -->
-                {%- if page.projects -%}
-                  {%- assign project_list = page.projects -%}
-                {%- endif -%}
+                    {%- if site.resume_section_projects -%}
+                        <!-- begin Projects section -->
+                        <section class="c-resume-section">
+                            {%- include section-header.html section_title="Professional Project Work" -%}
+                            <div class="c-resume-section__body">
+                                <!-- Get the 'Project' entries from front-matter -->
+                                {%- if page.projects -%}
+                                    {%- assign project_list = page.projects -%}
+                                {%- endif -%}
 
-                {%- for project in site.data.projects -%}
-                  <!-- if assigned -->
-                  {%- if project_list -%}
-                    <!-- print only selected entries -->
-                    {%- for i in project_list -%}
-                      {%- if project.id == i -%}
-                        {%- include project.html -%}
-                      {%- endif -%}
-                    {%- endfor -%}
-                    <!-- else print all entries-->
-                  {%- else -%}
-                    {%- include project.html -%}
-                  {%- endif -%}
-                {%- endfor -%}
-              </div><!-- ./section body -->
-            </section>
-            <!-- ./Projects section -->
-          {%- endif -%}
-        </div><!-- ./first column -->
+                                {%- for project in site.data.projects -%}
+                                    <!-- if assigned -->
+                                    {%- if project_list -%}
+                                        <!-- print only selected entries -->
+                                        {%- for i in project_list -%}
+                                            {%- if project.id == i -%}
+                                                {%- include project.html -%}
+                                            {%- endif -%}
+                                        {%- endfor -%}
+                                        <!-- else print all entries-->
+                                    {%- else -%}
+                                        {%- include project.html -%}
+                                    {%- endif -%}
+                                {%- endfor -%}
+                            </div><!-- ./section body -->
+                        </section>
+                        <!-- ./Projects section -->
+                    {%- endif -%}
+                </div><!-- ./first column -->
 
 
-        <div class="l-column-right"><!-- begin second column-->
-          {%- if site.resume_section_skills -%}
-            <!-- begin Skills section -->
-            <section class="c-resume-section">
-              {%- include section-header.html section_title="Skills & Competencies" -%}
-              <div class="c-resume-section__body">
-                {%- include skills.html -%}
-              </div>
+                <div class="l-column-right"><!-- begin second column-->
+                    {%- if site.resume_section_skills -%}
+                        <!-- begin Skills section -->
+                        <section class="c-resume-section">
+                            {%- include section-header.html section_title="Skills & Competencies" -%}
+                            <div class="c-resume-section__body">
+                                {%- include skills.html -%}
+                            </div>
 
-            </section><!-- ./Skills section -->
-          {%- endif -%}
-          <!-- ./if site.resume_section_skills -->
+                        </section><!-- ./Skills section -->
+                    {%- endif -%}
+                    <!-- ./if site.resume_section_skills -->
 
-          {%- if site.resume_section_work -%}
-            <!-- begin Work section -->
-            <section class="c-resume-section">
-              {%- include section-header.html section_title="Work Experience" -%}
-              <div class="c-resume-section__body">
-                <!-- Get the 'Project' entries from front-matter -->
-                {%- if page.work -%}
-                  {%- assign work_list = page.work -%}
-                {%- endif -%}
+                    {%- if site.resume_section_work -%}
+                        <!-- begin Work section -->
+                        <section class="c-resume-section">
+                            {%- include section-header.html section_title="Work Experience" -%}
+                            <div class="c-resume-section__body">
+                                <!-- Get the 'Project' entries from front-matter -->
+                                {%- if page.work -%}
+                                    {%- assign work_list = page.work -%}
+                                {%- endif -%}
 
-                {%- for work in site.data.work -%}
-                  <!-- if assigned -->
-                  {%- if work_list -%}
-                    <!-- print only selected entries-->
-                    {%- for i in work_list -%}
-                      {%- if work.id == i -%}
-                        {%- include work.html -%}
-                      {%- endif -%}
-                    {%- endfor -%}
+                                {%- for work in site.data.work -%}
+                                    <!-- if assigned -->
+                                    {%- if work_list -%}
+                                        <!-- print only selected entries-->
+                                        {%- for i in work_list -%}
+                                            {%- if work.id == i -%}
+                                                {%- include work.html -%}
+                                            {%- endif -%}
+                                        {%- endfor -%}
 
-                    <!-- else print all entries-->
-                  {%- else -%}
-                    {%- include work.html -%}
-                  {%- endif -%}
+                                        <!-- else print all entries-->
+                                    {%- else -%}
+                                        {%- include work.html -%}
+                                    {%- endif -%}
 
-                {%- endfor -%}
-              </div><!--./-resume-section__body-->
-            </section>
-            <!-- ./Work section -->
-          {%- endif -%}
-          <!-- ./if site.resume_section_work-->
+                                {%- endfor -%}
+                            </div><!--./-resume-section__body-->
+                        </section>
+                        <!-- ./Work section -->
+                    {%- endif -%}
+                    <!-- ./if site.resume_section_work-->
 
-          {%- if site.resume_section_education -%}
-            <!-- begin Education section -->
-            <section class="c-resume-section">
-              {%- include section-header.html section_title="Education" -%}
-              <div class="c-resume-section__body">
-                <!-- Get the 'Education' entries from front-matter -->
-                {%- if page.education -%}
-                  {%- assign education_list = page.education -%}
-                {%- endif -%}
+                    {%- if site.resume_section_education -%}
+                        <!-- begin Education section -->
+                        <section class="c-resume-section">
+                            {%- include section-header.html section_title="Education" -%}
+                            <div class="c-resume-section__body">
+                                <!-- Get the 'Education' entries from front-matter -->
+                                {%- if page.education -%}
+                                    {%- assign education_list = page.education -%}
+                                {%- endif -%}
 
-                {%- for education in site.data.education -%}
-                  <!-- if assigned -->
-                  {%- if education_list -%}
-                    <!-- print only selected  entries-->
-                    {%- for i in education_list -%}
-                      {%- if education.id == i -%}
-                        {%- include education.html -%}
-                      {%- endif -%}
-                    {%- endfor -%}
+                                {%- for education in site.data.education -%}
+                                    <!-- if assigned -->
+                                    {%- if education_list -%}
+                                        <!-- print only selected  entries-->
+                                        {%- for i in education_list -%}
+                                            {%- if education.id == i -%}
+                                                {%- include education.html -%}
+                                            {%- endif -%}
+                                        {%- endfor -%}
 
-                    <!-- else print all entries-->
-                  {%- else -%}
-                    {%- include education.html -%}
-                  {%- endif -%}
-                {%- endfor -%}
-              </div><!--./c-resume-section__body-->
-            </section>
-            <!-- ./Education section -->
-          {%- endif -%}
-          <!-- ./if site.resume_section_education-->
+                                        <!-- else print all entries-->
+                                    {%- else -%}
+                                        {%- include education.html -%}
+                                    {%- endif -%}
+                                {%- endfor -%}
+                            </div><!--./c-resume-section__body-->
+                        </section>
+                        <!-- ./Education section -->
+                    {%- endif -%}
+                    <!-- ./if site.resume_section_education-->
+                </div>
+                <!-- ./second column -->
+            </div>
+            <!-- ./body-wrapper -->
         </div>
-        <!-- ./second column -->
-      </div>
-      <!-- ./body-wrapper -->
-    </div>
-    <!-- ./container -->
-  </body>
+        <!-- ./container -->
+    </body>
 </html>

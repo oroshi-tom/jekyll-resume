@@ -1,20 +1,20 @@
 <!-- included education -->
 <div class="c-resume-entry">
-  <!-- Get the 'About' entry referenced in front-matter -->
-  {%- if page.about -%}
-    {% assign about_id = page.about %}
-  {%- endif -%}
+    <!-- Get the 'About' entry referenced in front-matter -->
+    {%- if page.about -%}
+        {% assign about_id = page.about %}
+    {%- endif -%}
 
-  <!-- If about_id is assigned, include that-->
-  {%- if about_id -%}
-    {%- for about in site.data.about -%}
-      {%- if about.id == about_id -%}
-        <div class="c-resume-entry__body">
-          <p>{{ about.summary }}</p>
-        </div>
-      {%- endif -%}
-    {%- endfor -%}
-  {%- endif -%}
+    <!-- If about_id is assigned, include that-->
+    {%- if about_id -%}
+        {%- for about in site.data.about -%}
+            {%- if about.id == about_id -%}
+                <div class="c-resume-entry__body">
+                    <p>{{ about.summary }}</p>
+                </div>
+            {%- endif -%}
+        {%- endfor -%}
+    {%- endif -%}
 
 </div>
 <!-- end of education-->

@@ -8,33 +8,6 @@ baseurl: "jekyll-resume-template"
 # Global Variables - same on every resume
 resume_name: "Your Name"
 
-# Default Resume Settings
-defaults:
-  - scope:
-      path: "resumes/*"
-    values:
-      layout: "resume"
-
-      #(1) > COPY THE FOLLOWING VARIABLES TO YOUR RESUME FRONT-MATTER
-      #(2)> Edit the numbers to include the entries you want, or leave blank to include all entries
-      #(3) ! DO NOT EDIT THESE HERE
-
-      #------------------COPY TO RESUME FRONT-MATTER------------------
-
-      resume: true
-
-      resume_title: "Job Title"
-      # Only include one 'About Me' Statement
-      about: 1
-      # Specify project ID's from _data/projects, separated by comma
-      projects: [1, 2]
-      # Specify work ID's from _data/work
-      work: [1, 2]
-      # Specify education ID's from _data/education
-      education: [1, 2]
-
-      #----------------------------------------------------------------
-
 # Contact info, displayed in banner
 resume_header_links:
   resume_header_email: "somebody@somewhere.org"
@@ -49,3 +22,29 @@ resume_section_projects: true
 resume_section_skills: true
 resume_section_work: true
 resume_section_education: true
+
+# Default Resume Settings
+defaults:
+  - scope:
+      path: "resumes/*"
+    values:
+      layout: "resume"
+      #------------------COPY TO RESUME FRONT-MATTER------------------
+
+      #(1) > COPY THE FOLLOWING VARIABLES TO YOUR RESUME FRONT-MATTER
+      #(2)> Edit the numbers to include the entries you want, or leave blank to include all entries
+      #(3) ! DO NOT EDIT THESE HERE
+
+      resume: true
+
+      resume_title: "Job Title"
+      # Only include one 'About Me' Statement
+      about: 1
+      # Specify project ID's from _data/projects, separated by comma
+      projects: [1, 2]
+      # Specify work ID's from _data/work
+      work: [1, 2]
+      # Specify education ID's from _data/education
+      education: [1, 2]
+
+      #----------------------------------------------------------------
