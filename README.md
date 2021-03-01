@@ -34,9 +34,13 @@ Since this is a resume *manager*, some setup is needed. The point here is that y
 The global customizations (name, contact info, etc.) will take place in the `/_config.yml` file, and will show on all resumes. Here is a list of the global customizations available via `/_config.yml`:
 
 -	**Baseurl:** Leave blank to run locally, or fill in with your gh-pages url if serving from there.
->`baseurl: ""`
+```
+baseurl: ""
+```
 -	**Resume Name:** Enter your name here, as it will show in the header of each resume.
->`resume_name: John Doe`
+```
+resume_name: John Doe
+```
 -	**resume_header_links:** Enter your contact information here, so that the header links will automatically navigate to the correct pages. Un-comment any links to exclude them.
 ``` 
 resume_header_links:
