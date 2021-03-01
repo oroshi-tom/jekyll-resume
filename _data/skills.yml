@@ -1,18 +1,40 @@
 # Skills
-# Add/remove skills as needed
-- skill: "[Skill]"
-- skill: "[Skill]"
-- skill: "[Skill]"
-- skill: "[Skill]"
-- skill: "[Skill]"
-- skill: "[Skill]"
-- skill: "[Skill]"
-- skill: "[Skill]"
-- skill: "[Skill]"
-- skill: "[Skill]"
-- skill: "[Skill]"
-- skill: "[Skill]"
-- skill: "[Skill]"
-- skill: "[Skill]"
-- skill: "[Skill]"
-- skill: "[Skill]"
+# Add/remove skills/skillsets as needed
+
+# Example Skillset
+- skillset: web-development
+  skills:
+    - skill
+    - skill
+    - skill
+    - skill
+    - skill
+    - skill
+    - skill
+    - skill
+    - skill
+    - skill
+    - skill
+    - skill
+    - skill
+    - skill
+    - skill
+    - skill
+- skillset: other-skills
+  skills:
+    - skill
+    - skill
+    - skill
+    - skill
+    - skill
+    - skill
+    - skill
+    - skill
+    - skill
+    - skill
+    - skill
+    - skill
+    - skill
+    - skill
+    - skill
+    - skill

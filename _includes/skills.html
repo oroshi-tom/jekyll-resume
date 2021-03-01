@@ -1,13 +1,11 @@
 <!-- included skills -->
 <div class="c-resume-entry">
-    <div class="c-resume-entry__body ">
-        <ul class="c-resume-section__float-container">
-            {% for skill in site.data.skills %}
-                <li class="c-resume-section__float-item">
-                    {{ skill.skill }}
-                </li>
-            {% endfor %}
-        </ul>
-    </div>
+  <div class="c-resume-entry__body">
+    <ul class="c-resume-section__float-container">
+      {% for skill in skillset.skills %}
+        <li class="c-resume-section__float-item">{{ skill }}</li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>
-<!-- end included skills -->
+<!-- end included skills --> 

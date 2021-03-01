@@ -3,7 +3,7 @@
 
 # Site Settings
 title: "Modern Resume Template"
-baseurl: "jekyll-resume-template"
+#baseurl: "jekyll-resume-template"
 
 # Global Variables - same on every resume
 resume_name: "Your Name"
@@ -40,10 +40,16 @@ defaults:
       resume_title: "Job Title"
       # Only include one 'About Me' Statement
       about: 1
+
       # Specify project ID's from _data/projects, separated by comma
       projects: [1, 2]
+
+      # Specify Skillset name from _data/skills
+      skills: other-skills
+
       # Specify work ID's from _data/work
       work: [1, 2]
+
       # Specify education ID's from _data/education
       education: [1, 2]
 
