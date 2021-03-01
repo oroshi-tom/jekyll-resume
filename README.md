@@ -1,4 +1,4 @@
-# Jekyll Resume Template + Manager
+# Jekyll Resume Template/Manager
 *A modern-looking resume template & manager built with Jekyll, that can be hosted on GitHub Pages.*
 
 Do you spend a lot of time writing resumes, copying contents from one resume to another?
