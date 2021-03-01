@@ -33,9 +33,6 @@ defaults:
 
       #(1) > COPY THE FOLLOWING VARIABLES TO YOUR RESUME FRONT-MATTER
       #(2)> Edit the numbers to include the entries you want, or leave blank to include all entries
-      #(3) ! DO NOT EDIT THESE HERE
-
-      resume: true
 
       resume_title: "Job Title"
       # Only include one 'About Me' Statement

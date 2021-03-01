@@ -14,7 +14,7 @@
           <nav class="c-resume-entry__body">
             <ul class="c-resume-entry__task-list">
               {%- for page in site.pages -%}
-                {% if page.resume %}
+                {% if page.layout == 'resume' %}
                   <li>
                     <a href="{{ page.url | relative_url }}">{{ page.resume_title }} </a>
                   </li>
