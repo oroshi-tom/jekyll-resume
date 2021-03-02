@@ -1,33 +1,33 @@
 <!-- included project -->
 <div class="c-resume-entry">
-    <div class="c-resume-entry__header">
-        <h4 class="c-resume-entry__name">{{ project.role }}</h4>
-        <h5 class="c-resume-entry__title">{{ project.title }}</h5>
-        <p class="c-resume-entry__details">{{ project.company }}
-            &bull;
-            {{ project.date }}
-        </p>
-        <p class="c-resume-entry__summary">
-            {{ project.summary }}
-        </p>
-        <!-- Link to project, if provided -->
-        {% if project.url %}
-            <p>
-                <a href="{{ project.url }}" target="_blank">{{ project.title }}</a>
-            </p>
-        {% endif %}
-    </div><!-- ./c-resume-entry__header -->
+  <div class="c-resume-entry__header">
+    <h4 class="c-resume-entry__name">{{ project.role }}</h4>
+    <h5 class="c-resume-entry__title">{{ project.title }}</h5>
+    <p class="c-resume-entry__details">{{ project.company }}
+      &bull;
+      {{ project.date }}
+    </p>
+    <p class="c-resume-entry__summary">
+      {{ project.summary }}
+    </p>
+    <!-- Link to project, if provided -->
+    {%- if project.url -%}
+      <p>
+        <a href="{{ project.url }}" target="_blank">{{ project.title }}</a>
+      </p>
+    {%- endif -%}
+  </div><!-- ./c-resume-entry__header -->
 
-    <div class="c-resume-entry__body">
-        <ul class="c-resume-entry__task-list">
-            {% for task in project.tasks %}
-                <li>
-                    <strong>{{ task.title }}:
-                    </strong>
-                    {{ task.description }}
-                </li>
-            {% endfor %}
-        </ul>
-    </div><!-- ./entry-body -->
+  <div class="c-resume-entry__body">
+    <ul class="c-resume-entry__task-list">
+      {%- for task in project.tasks -%}
+        <li>
+          <strong>{{ task.title }}:
+          </strong>
+          {{ task.description }}
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div><!-- ./entry-body -->
 </div>
 <!-- ./included project -->

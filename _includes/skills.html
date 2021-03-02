@@ -2,9 +2,9 @@
 <div class="c-resume-entry">
   <div class="c-resume-entry__body">
     <ul class="c-resume-section__float-container">
-      {% for skill in skillset.skills %}
+      {%- for skill in skillset.skills -%}
         <li class="c-resume-section__float-item">{{ skill }}</li>
-      {% endfor %}
+      {%- endfor -%}
     </ul>
   </div>
 </div>

@@ -12,6 +12,10 @@ about: 1
 # Choose id's from _data/projects.yml
 projects: [2, 3] # Comment out to include all
 
+# Skillset to include
+# Choose skillset name from _data/skills.yml
+skills: other-skills
+
 # Work entries to include
 # Choose id's from _data/work.yml
 work: [1, 3] # Comment out to include all

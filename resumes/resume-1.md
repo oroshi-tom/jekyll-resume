@@ -1,5 +1,4 @@
 ---
-resume: true
 layout: resume
 
 # Resume title to be displayed

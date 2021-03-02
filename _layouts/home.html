@@ -14,16 +14,33 @@
           <nav class="c-resume-entry__body">
             <ul class="c-resume-entry__task-list">
               {%- for page in site.pages -%}
-                {% if page.layout == 'resume' %}
+                {%- if page.layout == 'resume' -%}
                   <li>
                     <a href="{{ page.url | relative_url }}">{{ page.resume_title }} </a>
                   </li>
-                {% endif %} 
+                {%- endif -%} 
               {%- endfor -%}
             </ul>
           </nav>
         </div><!-- ./c-resume-section__body -->
-      </section><!-- ./c-resume-section -->
+      </section>
+      <!-- ./c-cover-letter-section -->
+      <section class="c-resume-section">
+        {%- include section-header.html section_title="Current Cover Letters" -%}
+        <div class="c-resume-section__body">      
+          <nav class="c-resume-entry__body">
+            <ul class="c-resume-entry__task-list">
+              {%- for page in site.pages -%}
+                {%- if page.layout == 'letter' -%}
+                  <li>
+                    <a href="{{ page.url | relative_url }}">{{ page.company}} </a>
+                  </li>
+                {%- endif -%} 
+              {%- endfor -%}
+            </ul>
+          </nav>
+        </div><!-- ./c-resume-section__body -->
+      </section><!-- ./c-cover-letter-section -->
     </div> <!-- ./l-main-container -->
   </div><!-- ./c-resume-body -->
 </body>
