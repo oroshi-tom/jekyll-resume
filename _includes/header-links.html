@@ -1,32 +1,34 @@
 <!-- Contact links, configured in _config.yml -->
-{% if site.resume_header_links %}
-  <ul class="c-resume-header__contact-list">
-    {% if site.resume_header_links.resume_header_email %}
-      <li class="c-resume-header__contact-item">
+{% if site.resume_contact %}
+  <ul class="c-page-header__contact-list">
+    {% if site.resume_contact.email %}
+      <li class="c-page-header__contact-item">
         <!-- <i class="fas fa-envelope"></i> -->
-        <i class="c-resume-header__contact-icon">{%- include icons/icon-email.html -%}</i>
-        <a class="c-resume-header__contact-link" href="mailto:{{ site.resume_header_links.resume_header_email }}">{{ site.resume_header_links.resume_header_email }}</a>
+        <i class="c-page-header__contact-icon">{%- include icons/icon-email.html -%}</i>
+        <a class="c-page-header__contact-link" href="mailto:{{ site.resume_contact.email }}">{{ site.resume_contact.email }}</a>
       </li>
     {% endif %}
-    {% if site.resume_header_links.resume_header_phone %}
-      <li class="c-resume-header__contact-item">
-        <i class="c-resume-header__contact-icon">{%- include icons/icon-phone.html -%}</i>
+
+
+    {% if site.resume_contact.phone %}
+      <li class="c-page-header__contact-item">
+        <i class="c-page-header__contact-icon">{%- include icons/icon-phone.html -%}</i>
         <!-- <i class="fas fa-phone"></i> -->
-        <a class="c-resume-header__contact-link" href="tel:{{ site.resume_header_links.resume_header_phone }}">{{ site.resume_header_links.resume_header_phone }}</a>
+        <a class="c-page-header__contact-link" href="tel:{{ site.resume_contact.phone }}">{{ site.resume_contact.phone }}</a>
       </li>
     {% endif %}
-    {% if site.resume_header_links.resume_header_linkedin %}
-      <li class="c-resume-header__contact-item">
-        <i class="c-resume-header__contact-icon">{%- include icons/icon-linkedin.html -%}</i>
+    {% if site.resume_contact.linkedin %}
+      <li class="c-page-header__contact-item">
+        <i class="c-page-header__contact-icon">{%- include icons/icon-linkedin.html -%}</i>
         <!-- <i class="fab fa-linkedin"></i> -->
-        <a class="c-resume-header__contact-link" href="{{ site.resume_header_links.resume_header_linkedin }}" target="_blank">{{ site.resume_header_links.resume_header_linkedin }}</a>
+        <a class="c-page-header__contact-link" href="{{ site.resume_contact.linkedin }}" target="_blank">{{ site.resume_contact.linkedin }}</a>
       </li>
     {% endif %}
-    {% if site.resume_header_links.resume_header_github %}
-      <li class="c-resume-header__contact-item">
-        <i class="c-resume-header__contact-icon">{%- include icons/icon-github.html -%}</i>
+    {% if site.resume_contact.github %}
+      <li class="c-page-header__contact-item">
+        <i class="c-page-header__contact-icon">{%- include icons/icon-github.html -%}</i>
         <!-- <i class="fab fa-github"></i> -->
-        <a class="c-resume-header__contact-link" href="{{ site.resume_header_links.resume_header_github }}" target="_blank">{{ site.resume_header_links.resume_header_github }}</a>
+        <a class="c-page-header__contact-link" href="{{ site.resume_contact.github }}" target="_blank">{{ site.resume_contact.github }}</a>
       </li>
     {% endif %}
   </ul>

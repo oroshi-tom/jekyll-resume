@@ -1,50 +1,19 @@
 # Jekyll Resume Theme Settings
 # ----------------------------
-# GitHub Pages Settings
-
-# baseurl: "multi-resume-template"
 
 # Site Settings
 title: "Modern Resume Template"
-baseurl: "multi-resume-template" # the subpath of your site, e.g. /blog
-# url: "" # the base hostname & protocol for your site, e.g. http://example.com
+#baseurl: "jekyll-resume-template"
 
 # Global Variables - same on every resume
-resume_name: "Your Name"
-
-# Default Resume Settings
-defaults:
-  - scope:
-      path: "resumes/*"
-    values:
-      layout: "resume"
-
-      #(1) > COPY THE FOLLOWING VARIABLES TO YOUR RESUME FRONT-MATTER
-      #(2)> Edit the numbers to include the entries you want, or leave blank to include all entries
-      #(3) ! DO NOT EDIT THESE HERE
-
-      #------------------COPY TO RESUME FRONT-MATTER------------------
-
-      resume: true
-
-      resume_title: "Job Title"
-      # Only include one 'About Me' Statement
-      about: 1
-      # Specify project ID's from _data/projects, separated by comma
-      projects: [1, 2]
-      # Specify work ID's from _data/work
-      work: [1, 2]
-      # Specify education ID's from _data/education
-      education: [1, 2]
-
-      #----------------------------------------------------------------
+resume_name: "Some Body"
 
 # Contact info, displayed in banner
-resume_header_links:
-  resume_header_email: "somebody@somewhere.org"
-  resume_header_phone: "123-456-7891"
-  resume_header_linkedin: "https://www.linkedin.com/"
-  resume_header_github: "https://github.com/"
+resume_contact:
+  email: "somebody@somewhere.org"
+  phone: "123-456-7891"
+  linkedin: "https://www.linkedin.com/"
+  github: "https://github.com/"
 
 # Resume Sections:
 # Comment/un-comment sections to exclude/include in resume
@@ -53,3 +22,45 @@ resume_section_projects: true
 resume_section_skills: true
 resume_section_work: true
 resume_section_education: true
+
+# Default Resume Settings
+defaults:
+#------------------LETTER DEFAULTS------------------#
+  - scope:
+      path: "letters/*"
+    values:
+      layout: "letter"
+      letter_title: Lorem
+      layout: letter
+      company: FakeCompany
+      position: CIO
+      posting_id: "0070010122"
+
+#------------------RESUME DEFAULTS------------------#
+  - scope:
+      path: "resumes/*"
+    values:
+      layout: "resume"
+
+
+
+      #(1) > CUT/PASTE THE FOLLOWING VARIABLES TO YOUR RESUME FRONT-MATTER
+      #(2)> Edit the numbers to include the entries you want, or leave blank to include all entries
+
+      resume_title: "Job Title"
+      # Only include one 'About Me' Statement
+      about: 1
+
+      # Specify project ID's from _data/projects, separated by comma
+      projects: [1, 2]
+
+      # Specify Skillset name from _data/skills
+      skills: other-skills
+
+      # Specify work ID's from _data/work
+      work: [1, 2]
+
+      # Specify education ID's from _data/education
+      education: [1, 2]
+
+      #----------------------------------------------------------------

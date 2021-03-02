@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+{%- include head.html -%}
+  <body>      
+      <!-- begin c-page-header -->
+      <header class="c-page-header">
+        <h1 class="c-page-header__name">{{ site.resume_name }}</h1>
+        <h6 class="c-page-header__title">
+          {%- if page.cover_letter_title -%}
+            {{ page.letter_title }}
+          {%- endif -%}
+        </h6>
+        {%- include header-links.html -%}
+      </header>
+      <!-- ./c-page-header -->
+
+    <div class="main-container">   
+      <div class="c-letter-wrapper">
+        <div class="c-letter-title">
+        <h3 id="title">COVER LETTER</h3>  
+        </div>
+        <!--@END: letter-title -->
+        <div class="c-letter-header">
+          <!-- @TODO: F-->
+          <p id="reference-position">
+            <strong>Position:
+            </strong>
+            {{ page.position }}
+          </p>
+          <p>
+            <strong>Posting ID:
+            </strong>
+            {%- if page.posting_id -%}
+              {{ page.posting_id }}
+            {%- endif -%}          
+          </p>
+        </div>
+        <!--@END: letter-header -->
+        <div class="c-letter-body">
+          <div class="c-letter-paragraph">
+            <p>
+              <strong>Dear Hiring Manager at {{page.company}}</strong>
+            </p>
+          </div>
+          <div class="c-letter-paragraph">
+            <p>
+              Please see also attached my resume for the {{page.position}} position, posted by your organization online. {%- for letter in site.data.letters -%}
+                {%- if letter.title == page.letter_title -%}
+                  {%- for paragraph in letter.paragraphs -%}
+                    <div class="c-letter-paragraph">
+                        <p>
+                          {{ paragraph }}
+                        </p>
+                    </div>
+                  {%- endfor -%}
+                {%- endif -%}
+              {%- endfor -%}                                         
+            </p>
+          </div>
+         
+          <div class="c-letter-paragraph">
+            <p>
+              I would very much like to discuss this opportunity with {{ page.company}}. To schedule an interview, please call me at {{site.resume_contact.phone}}
+            </p>
+          </div>
+          <div class="c-letter-paragraph">
+            <p>
+              Thank you for taking the time to review my resume. I look forward to talking with you.
+            </p>
+          </div>
+          <div class="c-letter-paragraph">
+            <p>Sincerely,</p>
+            <p><strong>{{site.resume_name}}</strong></p>
+          </div>
+        </div>
+        <!--@END: letter-body -->
+      </div>
+      <!--@END: letter-wrapper -->
+    </div>
+    <!--@END: main-container-->
+  </body>
+</html>

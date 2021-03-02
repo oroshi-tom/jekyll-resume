@@ -10,16 +10,16 @@
     <p class="c-resume-entry__summary">{{ work.summary }}</p>
   </div><!-- end entry header -->
   <div class="c-resume-entry__body">
+    <h6>Main Responsibilities:</h6>
     <div class="c-resume-entry__task-list">
-      <h6>Main Responsibilities:</h6>
       <ul>
-        {% for task in work.tasks %}
+        {%- for task in work.tasks -%}
           <li>
             <strong>{{ task.title }}:
             </strong>
             {{ task.description }}
           </li>
-        {% endfor %}
+        {%- endfor -%}
       </ul>
     </div>
   </div><!-- end entry body -->

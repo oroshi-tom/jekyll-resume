@@ -1,5 +1,4 @@
 ---
-resume: true
 layout: resume
 
 # Resume title to be displayed
@@ -12,6 +11,10 @@ about: 1
 # Project entries to inclue
 # Choose id's from _data/projects.yml
 projects: [2, 3] # Comment out to include all
+
+# Skillset to include
+# Choose skillset name from _data/skills.yml
+skills: other-skills
 
 # Work entries to include
 # Choose id's from _data/work.yml

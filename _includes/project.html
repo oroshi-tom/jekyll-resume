@@ -11,22 +11,22 @@
       {{ project.summary }}
     </p>
     <!-- Link to project, if provided -->
-    {% if project.url %}
+    {%- if project.url -%}
       <p>
         <a href="{{ project.url }}" target="_blank">{{ project.title }}</a>
       </p>
-    {% endif %}
+    {%- endif -%}
   </div><!-- ./c-resume-entry__header -->
 
   <div class="c-resume-entry__body">
     <ul class="c-resume-entry__task-list">
-      {% for task in project.tasks %}
+      {%- for task in project.tasks -%}
         <li>
           <strong>{{ task.title }}:
           </strong>
           {{ task.description }}
         </li>
-      {% endfor %}
+      {%- endfor -%}
     </ul>
   </div><!-- ./entry-body -->
 </div>
