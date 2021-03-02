@@ -1,24 +1,19 @@
 # jekyll-resume-template
-A modern-looking resume built with Jekyll and powered by Github Pages
-![img](images/screenshot.png)
-This template makes it easy to quickly make several custom-tailored resumes with minimum effort
+*A modern-looking resume template & content manager built with Jekyll, that can be hosted on GitHub Pages.*
+
+![img](images/screenshot.png)  
+
+This template makes it easy to build several custom-tailored resumes with minimum effort
 (And they look cool, too 👌).
 [View on GitHub Pages](https://oroshi-tom.github.io/jekyll-resume-template/)
 
-=======
-# Jekyll Resume Template/Manager
-*A modern-looking resume template & manager built with Jekyll, that can be hosted on GitHub Pages.*
+Do you spend a lot of time re-writing resumes, copying the contents from one resume to another?
 
-Do you spend a lot of time writing resumes, copying contents from one resume to another?
-
-Do you wish you could just fill in your info once, and select which entries to include in your current resume?
+Do you wish you could just fill in all your work history once, and have it (selectively) populate your new resumes?
 
 Do you want one place to see and manage all of your resumes?
 
-This template is for you!
-
-Easily build and manage several custom-tailored resumes from a single dataset, automate the boring stuff so that you can quickly apply for new openings as soon as they open.
-(And they look cool, too 👌).
+Those are the reasons I built this template 💪
 
 ## Prerequisites
 1. Some basic understanding of Jekyll and Bundler
