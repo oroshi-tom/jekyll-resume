@@ -1,4 +1,4 @@
-# jekyll-resume
+# jekyll-resume-template
 A modern-looking resume built with Jekyll and powered by Github Pages
 ![img](images/screenshot.png)
 This template makes it easy to quickly make several custom-tailored resumes with minimum effort
