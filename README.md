@@ -5,3 +5,4 @@ This template makes it easy to quickly make several custom-tailored resumes with
 (And they look cool, too 👌).
 [View on GitHub Pages](https://oroshi-tom.github.io/jekyll-resume-template/)
 
+### ToDo: Write out install, setup, and usage instructions
